@@ -161,11 +161,11 @@ window.TES_CONFIG = {
       driveFolderId: "1NCCXgROnUoAt7tVDrw2QobJ9KJ4_gIi2"
     },
     {
-      id: "ws-extra",
-      category: "general",
-      badge: "GENERAL",
-      titleEn: "Extra & General Resources",
-      titleJa: "その他・共通教材",
+      id: "ws-study-camp",
+      category: "study-camp",
+      badge: "STUDY CAMP",
+      titleEn: "Study Camp",
+      titleJa: "スタディキャンプ",
       driveFolderId: "1XExD2b1gDSx2nuA53Zw8WNIdyPHcvy7-"
     }
   ],
