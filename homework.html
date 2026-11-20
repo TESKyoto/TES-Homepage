@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework — Terakoya English Studio (TES)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Noto+Sans+JP:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">TES</span>
+        <span class="brand-text">
+          <span class="brand-name">Terakoya English Studio</span>
+          <span class="brand-sub">寺子屋イングリッシュスタジオ</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="homework.html" class="nav-link active" data-i18n="nav_homework">Homework</a>
+        <a href="worksheets.html" class="nav-link" data-i18n="nav_worksheets">Worksheets</a>
+        <a href="videos.html" class="nav-link" data-i18n="nav_videos">Videos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch Language">
+          🌐 <span data-i18n="lang_btn">日本語</span>
+        </button>
+        <button id="menu-btn" class="menu-btn" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="hw_header_title">Homework &amp; Google Classroom</h1>
+        <p data-i18n="hw_header_sub">Select your class below to view assignments and turn in your work.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" type="button" data-hw-filter="all" data-i18n="filter_all">All Classes</button>
+          <button class="filter-btn" type="button" data-hw-filter="jhs" data-i18n="filter_jhs">Junior High (JHS 1–3)</button>
+          <button class="filter-btn" type="button" data-hw-filter="hs" data-i18n="filter_hs">High School (HS 1–3)</button>
+          <button class="filter-btn" type="button" data-hw-filter="kids" data-i18n="filter_kids">Kids (Thu / Fri)</button>
+        </div>
+
+        <div id="homework-grid" class="grid-3"></div>
+
+        <div class="guide-box">
+          <h2 class="section-title" style="font-size:1.2rem;" data-i18n="guide_title">How to Upload Homework (Smartphone / Tablet)</h2>
+          <div class="guide-steps">
+            <div class="step-item">
+              <span class="step-num">1</span>
+              <h4 data-i18n="guide_s1_title">1. Open Your Class</h4>
+              <p data-i18n="guide_s1_desc">Tap your class button above to launch the Google Classroom app.</p>
+            </div>
+            <div class="step-item">
+              <span class="step-num">2</span>
+              <h4 data-i18n="guide_s2_title">2. Add Your Work</h4>
+              <p data-i18n="guide_s2_desc">Open the assignment, tap 'Your work' at the bottom, then tap '+ Add work'.</p>
+            </div>
+            <div class="step-item">
+              <span class="step-num">3</span>
+              <h4 data-i18n="guide_s3_title">3. Snap &amp; Turn In</h4>
+              <p data-i18n="guide_s3_desc">Take a clear photo of your notebook or worksheet, then tap 'Turn in'.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-i18n="footer_copy">© Terakoya English Studio (TES).</span>
+      <span>JHS 1–3 · HS 1–3 · Kids Thu / Fri</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

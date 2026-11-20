@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terakoya English Studio (TES) — Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Noto+Sans+JP:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">TES</span>
+        <span class="brand-text">
+          <span class="brand-name">Terakoya English Studio</span>
+          <span class="brand-sub">寺子屋イングリッシュスタジオ</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="homework.html" class="nav-link" data-i18n="nav_homework">Homework</a>
+        <a href="worksheets.html" class="nav-link" data-i18n="nav_worksheets">Worksheets</a>
+        <a href="videos.html" class="nav-link" data-i18n="nav_videos">Videos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch Language">
+          🌐 <span data-i18n="lang_btn">日本語</span>
+        </button>
+        <button id="menu-btn" class="menu-btn" type="button" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-pill" data-i18n="hero_pill">STUDENT PORTAL · TES</span>
+          <h1 data-i18n="hero_title">Terakoya English Studio</h1>
+          <p data-i18n="hero_sub">Access Google Classroom assignments, download class worksheets, and watch review videos—all in one place.</p>
+          <div class="hero-cta-group">
+            <a href="homework.html" class="btn btn-primary" data-i18n="hero_cta_hw">Go to Homework</a>
+            <a href="worksheets.html" class="btn btn-outline-light" data-i18n="hero_cta_ws">Worksheets &amp; PDFs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="portal_title">Student Quick Access</h2>
+        <p class="section-sub" data-i18n="portal_sub">Choose what you need for today's study.</p>
+
+        <div class="grid-3">
+          <article class="card card-hover">
+            <div>
+              <div class="card-icon">📝</div>
+              <h3 data-i18n="card_hw_title">Homework (Google Classroom)</h3>
+              <p data-i18n="card_hw_desc">Check assignments and upload photos of your completed homework by class.</p>
+            </div>
+            <a href="homework.html" class="btn btn-navy" data-i18n="card_hw_btn">Open Homework Hub</a>
+          </article>
+
+          <article class="card card-hover">
+            <div>
+              <div class="card-icon">📄</div>
+              <h3 data-i18n="card_ws_title">Worksheets &amp; PDFs</h3>
+              <p data-i18n="card_ws_desc">Download handouts and extra practice sheets directly from our Google Drive.</p>
+            </div>
+            <a href="worksheets.html" class="btn btn-navy" data-i18n="card_ws_btn">Browse Worksheets</a>
+          </article>
+
+          <article class="card card-hover">
+            <div>
+              <div class="card-icon">📺</div>
+              <h3 data-i18n="card_vid_title">Educational Videos</h3>
+              <p data-i18n="card_vid_desc">Watch grammar reviews, listening practice, and pronunciation guides.</p>
+            </div>
+            <a href="videos.html" class="btn btn-navy" data-i18n="card_vid_btn">Watch Videos</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="info-strip">
+          <div class="info-item">
+            <strong data-i18n="info_email_label">Contact Email</strong>
+            <span id="school-email">—</span>
+          </div>
+          <div class="info-item">
+            <strong data-i18n="info_loc_label">Location</strong>
+            <span id="school-location">—</span>
+          </div>
+          <div class="info-item info-line-item">
+            <div>
+              <strong data-i18n="info_line_label">LINE Official Account</strong>
+              <div id="school-line-wrap"></div>
+            </div>
+            <div id="line-qr-wrap"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" style="padding-top: 8px;">
+      <div class="container">
+        <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
+        <p class="section-sub" data-i18n="contact_sub">Questions about classes, trial lessons, or homework? Send us a message below.</p>
+        <div id="contact-form-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-i18n="footer_copy">© Terakoya English Studio (TES).</span>
+      <span>JHS 1–3 · HS 1–3 · Kids Thu / Fri</span>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
