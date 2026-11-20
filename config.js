@@ -131,6 +131,38 @@ window.TES_CONFIG = {
   ],
 
   /**
+   * WORKSHEET FOLDERS (Google Drive — 1 shared folder per level)
+   * ------------------------------------------------------------
+   * Add the Drive Folder ID for each level (set sharing to "Anyone with the link -> Viewer").
+   */
+  worksheetFolders: [
+    {
+      id: "ws-jhs",
+      category: "jhs",
+      badge: "JHS 1–3",
+      titleEn: "Junior High School Worksheets",
+      titleJa: "中学生用プリント・教材",
+      driveFolderId: "1qCOSsrQJQ6Rus765FZdj1qB_TuEi-6KE"
+    },
+    {
+      id: "ws-hs",
+      category: "hs",
+      badge: "HS 1–3",
+      titleEn: "High School Worksheets",
+      titleJa: "高校生用プリント・教材",
+      driveFolderId: "1LPZn9rI-Dsw374y4GXBMEyNVR53f3rMk"
+    },
+    {
+      id: "ws-kids",
+      category: "kids",
+      badge: "KIDS",
+      titleEn: "Kids Worksheets",
+      titleJa: "キッズ用プリント・教材",
+      driveFolderId: ""
+    }
+  ],
+
+  /**
    * EDUCATIONAL VIDEO LIBRARY (Unlisted YouTube Playlists or Videos)
    * ----------------------------------------------------------------
    * - category: "stories", "jhs", "hs", "kids", "general" (or an array like ["stories", "kids"])

@@ -276,15 +276,15 @@
 
   function renderWorksheets() {
     const wrap = document.getElementById("worksheets-list");
-    if (!wrap || !cfg.classes) return;
+    const folders = cfg.worksheetFolders || cfg.classes;
+    if (!wrap || !folders) return;
 
-    const items = cfg.classes.filter((c) => c.driveFolderId && (currentWsFilter === "all" || c.category === currentWsFilter));
+    const items = folders.filter((c) => c.driveFolderId && (currentWsFilter === "all" || c.category === currentWsFilter));
     wrap.innerHTML = items
       .map((c) => {
-        const title = currentLang === "ja" ? `${c.nameJa} (${c.badge})` : `${c.nameEn} (${c.badge})`;
-        const content = c.driveFolderId
-          ? `<div class="embed-frame-wrap"><iframe class="drive-iframe" src="https://drive.google.com/embeddedfolderview?id=${encodeURIComponent(c.driveFolderId)}#${currentWsView}" title="${title}"></iframe></div>`
-          : `<div class="setup-placeholder">${t("ws_pending")}</div>`;
+        const baseTitle = c.titleEn || c.nameEn;
+        const title = currentLang === "ja" ? (c.titleJa || c.nameJa) : baseTitle;
+        const content = `<div class="embed-frame-wrap"><iframe class="drive-iframe" src="https://drive.google.com/embeddedfolderview?id=${encodeURIComponent(c.driveFolderId)}#${currentWsView}" title="${title}"></iframe></div>`;
 
         return `
           <section style="margin-bottom: 32px;">
