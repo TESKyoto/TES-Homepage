@@ -153,7 +153,7 @@
     }
   };
 
-  let currentLang = localStorage.getItem(STORAGE_KEY) || cfg.defaultLang || "en";
+  let currentLang = "en";
   let currentHwFilter = "all";
   let currentWsFilter = "all";
   let currentWsView = "list";
@@ -186,7 +186,7 @@
       emailEl.innerHTML = `<a href="mailto:${cfg.school.email}" style="text-decoration:underline;text-decoration-color:var(--gold);">${cfg.school.email}</a>`;
     }
     if (locEl && cfg.school) {
-      locEl.textContent = currentLang === "ja" ? cfg.school.locationJa : cfg.school.locationEn;
+      locEl.innerHTML = `<span>${cfg.school.locationEn}</span><br><span style="font-size:0.86rem;font-weight:600;color:var(--text-muted);">${cfg.school.locationJa}</span>`;
     }
     if (lineWrap && cfg.school) {
       if (cfg.school.lineUrl) {

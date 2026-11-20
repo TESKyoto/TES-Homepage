@@ -29,9 +29,6 @@
       </nav>
 
       <div class="nav-actions">
-        <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch Language">
-          🌐 <span data-i18n="lang_btn">日本語</span>
-        </button>
         <button id="menu-btn" class="menu-btn" type="button" aria-label="Menu">☰</button>
       </div>
     </div>
@@ -79,41 +76,38 @@
           <article class="card card-hover">
             <div>
               <div class="card-icon">📺</div>
-              <h3 data-i18n="card_vid_title">Educational Videos</h3>
-              <p data-i18n="card_vid_desc">Watch grammar reviews, listening practice, and pronunciation guides.</p>
+              <h3>TES Videos</h3>
+              <p>Watch storybooks, diary series, and Reading Power playlists.</p>
             </div>
-            <a href="videos.html" class="btn btn-navy" data-i18n="card_vid_btn">Watch Videos</a>
+            <a href="videos.html" class="btn btn-navy">Watch Videos</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top: 0;">
+    <section class="section" id="contact" style="padding-top: 0;">
       <div class="container">
-        <div class="info-strip">
+        <h2 class="section-title">Contact Us <span style="font-size:0.8em;font-weight:600;color:var(--text-muted);">（お問い合わせ）</span></h2>
+        <p class="section-sub">Questions about classes, trial lessons, or homework? <span style="font-size:0.9em;">（クラスや体験レッスン、宿題に関するご質問はこちらから）</span></p>
+
+        <div class="info-strip" style="margin-bottom: 24px;">
           <div class="info-item">
-            <strong data-i18n="info_email_label">Contact Email</strong>
+            <strong>Contact Email（メール）</strong>
             <span id="school-email">—</span>
           </div>
           <div class="info-item">
-            <strong data-i18n="info_loc_label">Location</strong>
-            <span id="school-location">—</span>
+            <strong>Location（場所）</strong>
+            <div id="school-location">—</div>
           </div>
           <div class="info-item info-line-item">
             <div>
-              <strong data-i18n="info_line_label">LINE Official Account</strong>
+              <strong>LINE Official Account（公式LINE）</strong>
               <div id="school-line-wrap"></div>
             </div>
             <div id="line-qr-wrap"></div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section" id="contact" style="padding-top: 8px;">
-      <div class="container">
-        <h2 class="section-title" data-i18n="contact_title">Contact Us</h2>
-        <p class="section-sub" data-i18n="contact_sub">Questions about classes, trial lessons, or homework? Send us a message below.</p>
         <div id="contact-form-wrap"></div>
       </div>
     </section>
