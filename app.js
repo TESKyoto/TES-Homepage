@@ -12,7 +12,7 @@
 
       hero_pill: "STUDENT PORTAL · TES",
       hero_title: "Terakoya English Studio",
-      hero_sub: "Access Google Classroom assignments, download class worksheets, and watch review videos—all in one place.",
+      hero_sub: "Submit homework and watch TES videos—all in one place.",
       hero_cta_hw: "Go to Homework",
       hero_cta_ws: "Worksheets & PDFs",
 
@@ -86,7 +86,7 @@
 
       hero_pill: "生徒用ポータル · TES",
       hero_title: "寺子屋イングリッシュスタジオ",
-      hero_sub: "Google Classroomでの宿題提出、プリントのダウンロード、復習動画の視聴がここから簡単に行えます。",
+      hero_sub: "宿題の提出やTES動画の視聴が、すべてここから行えます。",
       hero_cta_hw: "宿題ページへ",
       hero_cta_ws: "プリント・PDFを見る",
 
