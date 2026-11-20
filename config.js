@@ -158,7 +158,15 @@ window.TES_CONFIG = {
       badge: "KIDS",
       titleEn: "Kids Worksheets",
       titleJa: "キッズ用プリント・教材",
-      driveFolderId: ""
+      driveFolderId: "1NCCXgROnUoAt7tVDrw2QobJ9KJ4_gIi2"
+    },
+    {
+      id: "ws-extra",
+      category: "general",
+      badge: "GENERAL",
+      titleEn: "Extra & General Resources",
+      titleJa: "その他・共通教材",
+      driveFolderId: "1XExD2b1gDSx2nuA53Zw8WNIdyPHcvy7-"
     }
   ],
 
