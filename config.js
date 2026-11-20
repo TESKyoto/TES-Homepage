@@ -190,7 +190,7 @@ window.TES_CONFIG = {
       descJa: "ビルの日記をテーマにしたリスニング＆リーディング動画シリーズ。",
       type: "playlist",
       youtubeId: "PLZ7dNS2FajUkUOjWqcHiLz0vOj2L1mghe",
-      episodeCount: 30
+      episodeCount: 82
     },
     {
       id: "v2",
@@ -201,7 +201,7 @@ window.TES_CONFIG = {
       descJa: "サラの日記をテーマにしたリスニング＆リーディング動画シリーズ。",
       type: "playlist",
       youtubeId: "PLZ7dNS2FajUlBOvsEmjZIJEALWrBwK_7U",
-      episodeCount: 30
+      episodeCount: 50
     },
     {
       id: "v3",
