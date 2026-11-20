@@ -278,7 +278,7 @@
     const wrap = document.getElementById("worksheets-list");
     if (!wrap || !cfg.classes) return;
 
-    const items = cfg.classes.filter((c) => currentWsFilter === "all" || c.category === currentWsFilter);
+    const items = cfg.classes.filter((c) => c.driveFolderId && (currentWsFilter === "all" || c.category === currentWsFilter));
     wrap.innerHTML = items
       .map((c) => {
         const title = currentLang === "ja" ? `${c.nameJa} (${c.badge})` : `${c.nameEn} (${c.badge})`;

@@ -49,7 +49,7 @@ window.TES_CONFIG = {
       scheduleEn: "Weekly Homework & Materials",
       scheduleJa: "週ごとの宿題・教材",
       classroomUrl: "https://classroom.google.com/w/NzcxMTUzNTg2OTI0/t/all",
-      driveFolderId: ""
+      driveFolderId: "1UXiosg16BzSmKQYS2Ga42q1Suw4HYGXsSVsYSVVfR8RBgGQU0w2A9eHnCBRws5J469lUbhrL"
     },
     {
       id: "jhs2",
@@ -60,7 +60,7 @@ window.TES_CONFIG = {
       scheduleEn: "Weekly Homework & Materials",
       scheduleJa: "週ごとの宿題・教材",
       classroomUrl: "https://classroom.google.com/w/ODY2NDE0MDIwNTE4/t/all",
-      driveFolderId: ""
+      driveFolderId: "1OukKH-9X5YbDomHhUPSctZhBB8k9GFEr0QwHUDD13kspZmSMcwZGLS907CPkC7cHDpUn6QfB"
     },
     {
       id: "jhs3",
@@ -71,7 +71,7 @@ window.TES_CONFIG = {
       scheduleEn: "Exam Prep & Weekly Homework",
       scheduleJa: "受験対策・週ごとの宿題",
       classroomUrl: "https://classroom.google.com/w/NjkwNTU4NDQyNTkx/t/all",
-      driveFolderId: ""
+      driveFolderId: "1tJtigbxSQTuiQtZ96fgIu-lKOdERqotW6MNTe7C0NVc61vc_NvoD7d-40ClePxq1y3ZEA4vp"
     },
     {
       id: "hs1",
@@ -82,7 +82,7 @@ window.TES_CONFIG = {
       scheduleEn: "Weekly Homework & Materials",
       scheduleJa: "週ごとの宿題・教材",
       classroomUrl: "https://classroom.google.com/w/NjAzMTM0OTI0MTQz/t/all",
-      driveFolderId: ""
+      driveFolderId: "1SomK54gCv8d7rCyG888PSowVy68T19va0Wdh4VEYTTAMVj6i7WtRXBfR39Z773hldBlXmZCP"
     },
     {
       id: "hs2",
@@ -93,7 +93,7 @@ window.TES_CONFIG = {
       scheduleEn: "Weekly Homework & Materials",
       scheduleJa: "週ごとの宿題・教材",
       classroomUrl: "https://classroom.google.com/w/NDk0ODE4MTQ3ODEy/t/all",
-      driveFolderId: ""
+      driveFolderId: "1vIbpHQZrjT4RVUPFGNIqjIC8vXj6aqiNLcGq9pNNoFc8s9xHUJe8NA_727iyJtG8_ZZN3sUo"
     },
     {
       id: "hs3",
