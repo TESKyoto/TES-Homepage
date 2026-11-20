@@ -24,9 +24,9 @@
       card_ws_title: "Worksheets & PDFs",
       card_ws_desc: "Download handouts and extra practice sheets directly from our Google Drive.",
       card_ws_btn: "Browse Worksheets",
-      card_vid_title: "Educational Videos",
-      card_vid_desc: "Watch grammar reviews, listening practice, and pronunciation guides.",
-      card_vid_btn: "Watch Videos",
+      card_vid_title: "TES Videos",
+      card_vid_desc: "Watch educational videos and storybook videos.",
+      card_vid_btn: "Watch TES Videos",
 
       info_email_label: "Contact Email",
       info_loc_label: "Location",
