@@ -181,6 +181,13 @@
     const lineWrap = document.getElementById("school-line-wrap");
     const qrWrap = document.getElementById("line-qr-wrap");
     const formWrap = document.getElementById("contact-form-wrap");
+    const sampleBtn = document.getElementById("sample-lesson-btn");
+
+    if (sampleBtn && cfg.school && cfg.school.sampleLessonUrl) {
+      sampleBtn.href = cfg.school.sampleLessonUrl;
+      sampleBtn.target = "_blank";
+      sampleBtn.rel = "noopener";
+    }
 
     if (emailEl && cfg.school && cfg.school.email) {
       emailEl.innerHTML = `<a href="mailto:${cfg.school.email}" style="text-decoration:underline;text-decoration-color:var(--gold);">${cfg.school.email}</a>`;
