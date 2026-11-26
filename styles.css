@@ -137,6 +137,7 @@ a {
   font-size: 0.92rem;
   font-weight: 700;
   color: #e6ddd0;
+  text-align: center;
   transition: background 0.15s, color 0.15s;
 }
 
@@ -315,6 +316,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 8px;
   padding: 12px 22px;
   border-radius: 999px;
@@ -736,6 +738,13 @@ a {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.info-line-item > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .qr-box {
