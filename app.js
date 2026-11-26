@@ -180,6 +180,8 @@
     const locEl = document.getElementById("school-location");
     const lineWrap = document.getElementById("school-line-wrap");
     const qrWrap = document.getElementById("line-qr-wrap");
+    const igWrap = document.getElementById("school-ig-wrap");
+    const igQrWrap = document.getElementById("ig-qr-wrap");
     const formWrap = document.getElementById("contact-form-wrap");
     const sampleBtn = document.getElementById("sample-lesson-btn");
 
@@ -196,11 +198,14 @@
       locEl.innerHTML = `<span>${cfg.school.locationEn}</span><br><span style="font-size:0.86rem;font-weight:600;color:var(--text-muted);">${cfg.school.locationJa}</span>`;
     }
     if (lineWrap && cfg.school) {
-      if (cfg.school.lineUrl) {
-        lineWrap.innerHTML = `<a class="btn btn-line btn-sm" href="${cfg.school.lineUrl}" target="_blank" rel="noopener">${t("info_line_btn")}</a>`;
-      } else {
-        lineWrap.innerHTML = `<span>${t("info_line_soon")}</span>`;
-      }
+      const lineHref = cfg.school.lineUrl || "#contact";
+      const lineTarget = cfg.school.lineUrl ? ' target="_blank" rel="noopener"' : "";
+      lineWrap.innerHTML = `<a class="btn btn-line btn-sm" href="${lineHref}"${lineTarget}>Click Here &rarr;<span class="ja-sub">こちら</span></a>`;
+    }
+    if (igWrap && cfg.school) {
+      const igHref = cfg.school.instagramUrl || "#contact";
+      const igTarget = cfg.school.instagramUrl ? ' target="_blank" rel="noopener"' : "";
+      igWrap.innerHTML = `<a class="btn btn-navy btn-sm" href="${igHref}"${igTarget} style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);border:none;">Click Here &rarr;<span class="ja-sub">こちら</span></a>`;
     }
     if (qrWrap && cfg.school) {
       if (cfg.school.lineQrImageUrl) {
@@ -232,6 +237,42 @@
               <rect x="42" y="82" width="16" height="8" fill="#074738"/>
               <rect x="66" y="82" width="8" height="8" fill="#074738"/>
               <rect x="80" y="82" width="12" height="8" fill="#074738"/>
+            </svg>
+            <span class="qr-caption">${t("info_line_qr_mock")}</span>
+          </div>
+        `;
+      }
+    }
+    if (igQrWrap && cfg.school) {
+      if (cfg.school.instagramQrImageUrl) {
+        igQrWrap.innerHTML = `<div class="qr-box"><img src="${cfg.school.instagramQrImageUrl}" alt="Instagram QR Code"></div>`;
+      } else {
+        igQrWrap.innerHTML = `
+          <div class="qr-box" title="Sample Instagram QR (Coming Soon)">
+            <svg viewBox="0 0 100 100" width="76" height="76" aria-label="Sample Instagram QR Code">
+              <rect width="100" height="100" rx="8" fill="#ffffff"/>
+              <rect x="8" y="8" width="26" height="26" rx="4" fill="none" stroke="#2c211b" stroke-width="5"/>
+              <rect x="15" y="15" width="12" height="12" rx="2" fill="#d62976"/>
+              <rect x="66" y="8" width="26" height="26" rx="4" fill="none" stroke="#2c211b" stroke-width="5"/>
+              <rect x="73" y="15" width="12" height="12" rx="2" fill="#d62976"/>
+              <rect x="8" y="66" width="26" height="26" rx="4" fill="none" stroke="#2c211b" stroke-width="5"/>
+              <rect x="15" y="73" width="12" height="12" rx="2" fill="#d62976"/>
+              <rect x="42" y="10" width="6" height="6" fill="#2c211b"/>
+              <rect x="52" y="10" width="6" height="6" fill="#2c211b"/>
+              <rect x="42" y="22" width="14" height="6" fill="#2c211b"/>
+              <rect x="10" y="42" width="6" height="14" fill="#2c211b"/>
+              <rect x="22" y="46" width="10" height="6" fill="#2c211b"/>
+              <rect x="40" y="38" width="20" height="20" rx="5" fill="#d62976"/>
+              <text x="50" y="51" text-anchor="middle" font-size="9" font-weight="800" fill="#ffffff" font-family="sans-serif">IG</text>
+              <rect x="68" y="42" width="8" height="8" fill="#2c211b"/>
+              <rect x="82" y="42" width="10" height="6" fill="#2c211b"/>
+              <rect x="74" y="54" width="16" height="6" fill="#2c211b"/>
+              <rect x="42" y="66" width="8" height="8" fill="#2c211b"/>
+              <rect x="56" y="66" width="12" height="6" fill="#2c211b"/>
+              <rect x="74" y="68" width="16" height="8" fill="#2c211b"/>
+              <rect x="42" y="82" width="16" height="8" fill="#2c211b"/>
+              <rect x="66" y="82" width="8" height="8" fill="#2c211b"/>
+              <rect x="80" y="82" width="12" height="8" fill="#2c211b"/>
             </svg>
             <span class="qr-caption">${t("info_line_qr_mock")}</span>
           </div>

@@ -23,6 +23,9 @@ window.TES_CONFIG = {
     lineUrl: "",
     // Put your real LINE QR image filename here later (e.g. "line-qr.png"). Leave "" to show the mockup QR.
     lineQrImageUrl: "",
+    // Paste your Instagram Official Account URL and QR image filename here later
+    instagramUrl: "",
+    instagramQrImageUrl: "",
     // Paste your Sample Lesson booking link here later
     sampleLessonUrl: "",
     // Paste your Google Form "Embed" src URL here (e.g., "https://docs.google.com/forms/d/e/.../viewform?embedded=true")
